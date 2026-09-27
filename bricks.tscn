@@ -1,0 +1,378 @@
+[gd_scene format=3 uid="uid://cnnwgqy63vjlc"]
+
+[ext_resource type="PackedScene" uid="uid://cnyj7jvq0eroh" path="res://brick.tscn" id="1_30gar"]
+[ext_resource type="Script" uid="uid://cuu70i3x2ii80" path="res://Scripts/brick_row.gd" id="1_cjtcm"]
+
+[node name="Bricks" type="Node2D" unique_id=1688514327]
+
+[node name="Brick Row" type="Node2D" parent="." unique_id=121764390]
+script = ExtResource("1_cjtcm")
+
+[node name="Brick" parent="Brick Row" unique_id=2019618332 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(171, 120)
+
+[node name="Brick2" parent="Brick Row" unique_id=1610280475 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0.49803922, 0, 1)
+position = Vector2(171, 150)
+
+[node name="Brick3" parent="Brick Row" unique_id=1554068011 instance=ExtResource("1_30gar")]
+modulate = Color(1, 1, 0, 1)
+position = Vector2(171, 180)
+
+[node name="Brick4" parent="Brick Row" unique_id=1800601885 instance=ExtResource("1_30gar")]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(171, 210)
+
+[node name="Brick5" parent="Brick Row" unique_id=1970363147 instance=ExtResource("1_30gar")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(171, 240)
+
+[node name="Brick6" parent="Brick Row" unique_id=1660989026 instance=ExtResource("1_30gar")]
+modulate = Color(0.5803922, 0, 0.8235294, 1)
+position = Vector2(171, 270)
+
+[node name="Brick7" parent="Brick Row" unique_id=1440605969 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0.078431375, 0.57254905, 1)
+position = Vector2(171, 300)
+
+[node name="Brick Row2" type="Node2D" parent="." unique_id=825024536]
+script = ExtResource("1_cjtcm")
+
+[node name="Brick" parent="Brick Row2" unique_id=2071784009 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(275, 120)
+
+[node name="Brick2" parent="Brick Row2" unique_id=360645510 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0.49803922, 0, 1)
+position = Vector2(275, 150)
+
+[node name="Brick3" parent="Brick Row2" unique_id=1660993624 instance=ExtResource("1_30gar")]
+modulate = Color(1, 1, 0, 1)
+position = Vector2(275, 180)
+
+[node name="Brick4" parent="Brick Row2" unique_id=1547303309 instance=ExtResource("1_30gar")]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(275, 210)
+
+[node name="Brick5" parent="Brick Row2" unique_id=1272628234 instance=ExtResource("1_30gar")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(275, 240)
+
+[node name="Brick6" parent="Brick Row2" unique_id=2130328491 instance=ExtResource("1_30gar")]
+modulate = Color(0.5803922, 0, 0.8235294, 1)
+position = Vector2(275, 270)
+
+[node name="Brick7" parent="Brick Row2" unique_id=309277263 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0.078431375, 0.57254905, 1)
+position = Vector2(275, 300)
+
+[node name="Brick Row3" type="Node2D" parent="." unique_id=281298850]
+script = ExtResource("1_cjtcm")
+
+[node name="Brick" parent="Brick Row3" unique_id=1216963049 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(379, 120)
+
+[node name="Brick2" parent="Brick Row3" unique_id=2021867352 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0.49803922, 0, 1)
+position = Vector2(379, 150)
+
+[node name="Brick3" parent="Brick Row3" unique_id=1948654034 instance=ExtResource("1_30gar")]
+modulate = Color(1, 1, 0, 1)
+position = Vector2(379, 180)
+
+[node name="Brick4" parent="Brick Row3" unique_id=209069869 instance=ExtResource("1_30gar")]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(379, 210)
+
+[node name="Brick5" parent="Brick Row3" unique_id=726571582 instance=ExtResource("1_30gar")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(379, 240)
+
+[node name="Brick6" parent="Brick Row3" unique_id=477867653 instance=ExtResource("1_30gar")]
+modulate = Color(0.5803922, 0, 0.8235294, 1)
+position = Vector2(379, 270)
+
+[node name="Brick7" parent="Brick Row3" unique_id=703036127 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0.078431375, 0.57254905, 1)
+position = Vector2(379, 300)
+
+[node name="Brick Row4" type="Node2D" parent="." unique_id=1928725749]
+script = ExtResource("1_cjtcm")
+
+[node name="Brick" parent="Brick Row4" unique_id=1958866094 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(483, 120)
+
+[node name="Brick2" parent="Brick Row4" unique_id=1168421474 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0.49803922, 0, 1)
+position = Vector2(483, 150)
+
+[node name="Brick3" parent="Brick Row4" unique_id=398707683 instance=ExtResource("1_30gar")]
+modulate = Color(1, 1, 0, 1)
+position = Vector2(483, 180)
+
+[node name="Brick4" parent="Brick Row4" unique_id=1664731246 instance=ExtResource("1_30gar")]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(483, 210)
+
+[node name="Brick5" parent="Brick Row4" unique_id=553963294 instance=ExtResource("1_30gar")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(483, 240)
+
+[node name="Brick6" parent="Brick Row4" unique_id=1359961433 instance=ExtResource("1_30gar")]
+modulate = Color(0.5803922, 0, 0.8235294, 1)
+position = Vector2(483, 270)
+
+[node name="Brick7" parent="Brick Row4" unique_id=544296921 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0.078431375, 0.57254905, 1)
+position = Vector2(483, 300)
+
+[node name="Brick Row5" type="Node2D" parent="." unique_id=2114256239]
+script = ExtResource("1_cjtcm")
+
+[node name="Brick" parent="Brick Row5" unique_id=282550333 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(588, 120)
+
+[node name="Brick2" parent="Brick Row5" unique_id=2002390112 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0.49803922, 0, 1)
+position = Vector2(588, 150)
+
+[node name="Brick3" parent="Brick Row5" unique_id=1037638422 instance=ExtResource("1_30gar")]
+modulate = Color(1, 1, 0, 1)
+position = Vector2(588, 180)
+
+[node name="Brick4" parent="Brick Row5" unique_id=30491823 instance=ExtResource("1_30gar")]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(588, 210)
+
+[node name="Brick5" parent="Brick Row5" unique_id=1173957518 instance=ExtResource("1_30gar")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(588, 240)
+
+[node name="Brick6" parent="Brick Row5" unique_id=921594036 instance=ExtResource("1_30gar")]
+modulate = Color(0.5803922, 0, 0.8235294, 1)
+position = Vector2(588, 270)
+
+[node name="Brick7" parent="Brick Row5" unique_id=742576587 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0.078431375, 0.57254905, 1)
+position = Vector2(588, 300)
+
+[node name="Brick Row6" type="Node2D" parent="." unique_id=1067506649]
+script = ExtResource("1_cjtcm")
+
+[node name="Brick" parent="Brick Row6" unique_id=63960477 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(692, 120)
+
+[node name="Brick2" parent="Brick Row6" unique_id=585271426 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0.49803922, 0, 1)
+position = Vector2(692, 150)
+
+[node name="Brick3" parent="Brick Row6" unique_id=568181087 instance=ExtResource("1_30gar")]
+modulate = Color(1, 1, 0, 1)
+position = Vector2(692, 180)
+
+[node name="Brick4" parent="Brick Row6" unique_id=449722683 instance=ExtResource("1_30gar")]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(692, 210)
+
+[node name="Brick5" parent="Brick Row6" unique_id=1465420443 instance=ExtResource("1_30gar")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(692, 240)
+
+[node name="Brick6" parent="Brick Row6" unique_id=1991078542 instance=ExtResource("1_30gar")]
+modulate = Color(0.5803922, 0, 0.8235294, 1)
+position = Vector2(692, 270)
+
+[node name="Brick7" parent="Brick Row6" unique_id=181586841 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0.078431375, 0.57254905, 1)
+position = Vector2(692, 300)
+
+[node name="Brick Row7" type="Node2D" parent="." unique_id=558856688]
+script = ExtResource("1_cjtcm")
+
+[node name="Brick" parent="Brick Row7" unique_id=512661247 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(796, 120)
+
+[node name="Brick2" parent="Brick Row7" unique_id=1875110330 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0.49803922, 0, 1)
+position = Vector2(796, 150)
+
+[node name="Brick3" parent="Brick Row7" unique_id=390861869 instance=ExtResource("1_30gar")]
+modulate = Color(1, 1, 0, 1)
+position = Vector2(796, 180)
+
+[node name="Brick4" parent="Brick Row7" unique_id=36981049 instance=ExtResource("1_30gar")]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(796, 210)
+
+[node name="Brick5" parent="Brick Row7" unique_id=1330877794 instance=ExtResource("1_30gar")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(796, 240)
+
+[node name="Brick6" parent="Brick Row7" unique_id=2143823713 instance=ExtResource("1_30gar")]
+modulate = Color(0.5803922, 0, 0.8235294, 1)
+position = Vector2(796, 270)
+
+[node name="Brick7" parent="Brick Row7" unique_id=1540746127 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0.078431375, 0.57254905, 1)
+position = Vector2(796, 300)
+
+[node name="Brick Row8" type="Node2D" parent="." unique_id=1443450992]
+script = ExtResource("1_cjtcm")
+
+[node name="Brick" parent="Brick Row8" unique_id=626457404 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(900, 120)
+
+[node name="Brick2" parent="Brick Row8" unique_id=1826119817 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0.49803922, 0, 1)
+position = Vector2(900, 150)
+
+[node name="Brick3" parent="Brick Row8" unique_id=976185926 instance=ExtResource("1_30gar")]
+modulate = Color(1, 1, 0, 1)
+position = Vector2(900, 180)
+
+[node name="Brick4" parent="Brick Row8" unique_id=1065428549 instance=ExtResource("1_30gar")]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(900, 210)
+
+[node name="Brick5" parent="Brick Row8" unique_id=638822551 instance=ExtResource("1_30gar")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(900, 240)
+
+[node name="Brick6" parent="Brick Row8" unique_id=692088520 instance=ExtResource("1_30gar")]
+modulate = Color(0.5803922, 0, 0.8235294, 1)
+position = Vector2(900, 270)
+
+[node name="Brick7" parent="Brick Row8" unique_id=1612434314 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0.078431375, 0.57254905, 1)
+position = Vector2(900, 300)
+
+[node name="Brick Row9" type="Node2D" parent="." unique_id=1898296162]
+script = ExtResource("1_cjtcm")
+
+[node name="Brick" parent="Brick Row9" unique_id=1164179604 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(1004, 120)
+
+[node name="Brick2" parent="Brick Row9" unique_id=1988780651 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0.49803922, 0, 1)
+position = Vector2(1004, 150)
+
+[node name="Brick3" parent="Brick Row9" unique_id=1129302677 instance=ExtResource("1_30gar")]
+modulate = Color(1, 1, 0, 1)
+position = Vector2(1004, 180)
+
+[node name="Brick4" parent="Brick Row9" unique_id=2122155585 instance=ExtResource("1_30gar")]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(1004, 210)
+
+[node name="Brick5" parent="Brick Row9" unique_id=338833204 instance=ExtResource("1_30gar")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(1004, 240)
+
+[node name="Brick6" parent="Brick Row9" unique_id=1229771182 instance=ExtResource("1_30gar")]
+modulate = Color(0.5803922, 0, 0.8235294, 1)
+position = Vector2(1004, 270)
+
+[node name="Brick7" parent="Brick Row9" unique_id=1530989041 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0.078431375, 0.57254905, 1)
+position = Vector2(1004, 300)
+
+[node name="Brick Row10" type="Node2D" parent="." unique_id=1750211002]
+script = ExtResource("1_cjtcm")
+
+[node name="Brick" parent="Brick Row10" unique_id=1875000470 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(1108, 120)
+
+[node name="Brick2" parent="Brick Row10" unique_id=1483581339 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0.49803922, 0, 1)
+position = Vector2(1108, 150)
+
+[node name="Brick3" parent="Brick Row10" unique_id=679469490 instance=ExtResource("1_30gar")]
+modulate = Color(1, 1, 0, 1)
+position = Vector2(1108, 180)
+
+[node name="Brick4" parent="Brick Row10" unique_id=303752573 instance=ExtResource("1_30gar")]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(1108, 210)
+
+[node name="Brick5" parent="Brick Row10" unique_id=228758950 instance=ExtResource("1_30gar")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(1108, 240)
+
+[node name="Brick6" parent="Brick Row10" unique_id=1581616858 instance=ExtResource("1_30gar")]
+modulate = Color(0.5803922, 0, 0.8235294, 1)
+position = Vector2(1108, 270)
+
+[node name="Brick7" parent="Brick Row10" unique_id=2146883175 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0.078431375, 0.57254905, 1)
+position = Vector2(1108, 300)
+
+[node name="Brick Row11" type="Node2D" parent="." unique_id=109510029]
+script = ExtResource("1_cjtcm")
+
+[node name="Brick" parent="Brick Row11" unique_id=1086919726 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(1212, 120)
+
+[node name="Brick2" parent="Brick Row11" unique_id=137732081 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0.49803922, 0, 1)
+position = Vector2(1212, 150)
+
+[node name="Brick3" parent="Brick Row11" unique_id=1546854149 instance=ExtResource("1_30gar")]
+modulate = Color(1, 1, 0, 1)
+position = Vector2(1212, 180)
+
+[node name="Brick4" parent="Brick Row11" unique_id=1191844300 instance=ExtResource("1_30gar")]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(1212, 210)
+
+[node name="Brick5" parent="Brick Row11" unique_id=323406629 instance=ExtResource("1_30gar")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(1212, 240)
+
+[node name="Brick6" parent="Brick Row11" unique_id=1453218428 instance=ExtResource("1_30gar")]
+modulate = Color(0.5803922, 0, 0.8235294, 1)
+position = Vector2(1212, 270)
+
+[node name="Brick7" parent="Brick Row11" unique_id=1900077785 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0.078431375, 0.57254905, 1)
+position = Vector2(1212, 300)
+
+[node name="Brick Row12" type="Node2D" parent="." unique_id=1174844501]
+script = ExtResource("1_cjtcm")
+
+[node name="Brick" parent="Brick Row12" unique_id=1509795580 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(67, 120)
+
+[node name="Brick2" parent="Brick Row12" unique_id=1475430226 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0.49803922, 0, 1)
+position = Vector2(67, 150)
+
+[node name="Brick3" parent="Brick Row12" unique_id=2049809950 instance=ExtResource("1_30gar")]
+modulate = Color(1, 1, 0, 1)
+position = Vector2(67, 180)
+
+[node name="Brick4" parent="Brick Row12" unique_id=847714096 instance=ExtResource("1_30gar")]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(67, 210)
+
+[node name="Brick5" parent="Brick Row12" unique_id=2092918404 instance=ExtResource("1_30gar")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(67, 240)
+
+[node name="Brick6" parent="Brick Row12" unique_id=1811194454 instance=ExtResource("1_30gar")]
+modulate = Color(0.5803922, 0, 0.8235294, 1)
+position = Vector2(67, 270)
+
+[node name="Brick7" parent="Brick Row12" unique_id=1052334629 instance=ExtResource("1_30gar")]
+modulate = Color(1, 0.078431375, 0.57254905, 1)
+position = Vector2(67, 300)

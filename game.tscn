@@ -1,0 +1,109 @@
+[gd_scene format=3 uid="uid://bx3b1mcmbcix1"]
+
+[ext_resource type="Script" uid="uid://vr07dd0o88st" path="res://Scripts/game.gd" id="1_7jktm"]
+[ext_resource type="PackedScene" uid="uid://bwob1fxhw7ikm" path="res://wall.tscn" id="1_80nbo"]
+[ext_resource type="PackedScene" uid="uid://cv6r2wbfv4e8f" path="res://paddle.tscn" id="3_feb5d"]
+[ext_resource type="PackedScene" uid="uid://bxevymji3t5c0" path="res://ball.tscn" id="4_fc0e3"]
+[ext_resource type="PackedScene" uid="uid://cnnwgqy63vjlc" path="res://bricks.tscn" id="5_eow3j"]
+[ext_resource type="PackedScene" uid="uid://02jh1anhar8f" path="res://destroy_trigger.tscn" id="6_ryrav"]
+[ext_resource type="PackedScene" uid="uid://p5weucsa10kc" path="res://hud.tscn" id="7_eow3j"]
+[ext_resource type="AudioStream" uid="uid://bj16bjgw1r0s7" path="res://SFX/appearance.wav" id="8_j5wjh"]
+[ext_resource type="AudioStream" uid="uid://c1mfafplhoswu" path="res://SFX/bounce.wav" id="8_vef74"]
+[ext_resource type="AudioStream" uid="uid://d000a6c5ohd52" path="res://SFX/bounce1.wav" id="9_80cx4"]
+[ext_resource type="AudioStream" uid="uid://dpy51xp8o3l5y" path="res://SFX/bounce2.wav" id="10_e8heu"]
+[ext_resource type="AudioStream" uid="uid://bhxdye64dercg" path="res://SFX/bounce3.wav" id="11_rvswv"]
+[ext_resource type="AudioStream" uid="uid://ckcnq0hc1d45b" path="res://SFX/bounce4.wav" id="12_boyg6"]
+[ext_resource type="AudioStream" uid="uid://bvptb2qjjcbcu" path="res://SFX/bounce5.wav" id="13_e36ub"]
+[ext_resource type="AudioStream" uid="uid://b72a85ws5d1oi" path="res://SFX/bounce6.wav" id="14_hb5m1"]
+[ext_resource type="AudioStream" uid="uid://bhgaukjkbdeu6" path="res://SFX/bounce7.wav" id="15_x5p1p"]
+[ext_resource type="AudioStream" uid="uid://t23sf270w57c" path="res://SFX/pause.wav" id="17_e8heu"]
+[ext_resource type="AudioStream" uid="uid://4cp3ixoqpccq" path="res://SFX/unpause.wav" id="18_boyg6"]
+[ext_resource type="AudioStream" uid="uid://lj3dy2sbox4m" path="res://SFX/gameover.wav" id="19_e36ub"]
+
+[node name="Game" type="Node2D" unique_id=89512707 groups=["Scores"]]
+script = ExtResource("1_7jktm")
+ball_scene = ExtResource("4_fc0e3")
+bricks_scene = ExtResource("5_eow3j")
+
+[node name="Paddle" parent="." unique_id=235795588 instance=ExtResource("3_feb5d")]
+position = Vector2(640, 660)
+speed = 700
+
+[node name="Ball" parent="." unique_id=996984360 instance=ExtResource("4_fc0e3")]
+position = Vector2(640, 375)
+
+[node name="Celling" parent="." unique_id=270761852 instance=ExtResource("1_80nbo")]
+position = Vector2(355, 0)
+
+[node name="Bricks" parent="." unique_id=1688514327 instance=ExtResource("5_eow3j")]
+
+[node name="Wall" parent="." unique_id=1007185271 instance=ExtResource("1_80nbo")]
+position = Vector2(0, 176)
+rotation = -1.5707964
+
+[node name="Wall2" parent="." unique_id=158655822 instance=ExtResource("1_80nbo")]
+position = Vector2(1280, 326)
+rotation = 1.5707964
+
+[node name="DestroyTrigger" parent="." unique_id=1272365798 instance=ExtResource("6_ryrav")]
+position = Vector2(658, 800)
+
+[node name="HUD" parent="." unique_id=409868500 instance=ExtResource("7_eow3j")]
+
+[node name="BounceSounds" type="Node" parent="." unique_id=1044829060]
+
+[node name="Bounce" type="AudioStreamPlayer" parent="BounceSounds" unique_id=1008699816]
+stream = ExtResource("8_vef74")
+
+[node name="Bounce2" type="AudioStreamPlayer" parent="BounceSounds" unique_id=209311279]
+stream = ExtResource("9_80cx4")
+
+[node name="Bounce3" type="AudioStreamPlayer" parent="BounceSounds" unique_id=1622720502]
+stream = ExtResource("10_e8heu")
+
+[node name="Bounce4" type="AudioStreamPlayer" parent="BounceSounds" unique_id=1418629090]
+stream = ExtResource("11_rvswv")
+
+[node name="Bounce5" type="AudioStreamPlayer" parent="BounceSounds" unique_id=1737018609]
+stream = ExtResource("12_boyg6")
+
+[node name="Bounce6" type="AudioStreamPlayer" parent="BounceSounds" unique_id=615396224]
+stream = ExtResource("13_e36ub")
+
+[node name="Bounce7" type="AudioStreamPlayer" parent="BounceSounds" unique_id=722501409]
+stream = ExtResource("14_hb5m1")
+
+[node name="Bounce8" type="AudioStreamPlayer" parent="BounceSounds" unique_id=1583679423]
+stream = ExtResource("15_x5p1p")
+
+[node name="Appearance" type="AudioStreamPlayer" parent="." unique_id=2119347618]
+stream = ExtResource("8_j5wjh")
+autoplay = true
+
+[node name="Background" type="CanvasLayer" parent="." unique_id=1357965558]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="Background" unique_id=1630425921]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(639, 372)
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Pause" type="AudioStreamPlayer" parent="." unique_id=836328876]
+stream = ExtResource("17_e8heu")
+max_polyphony = 3
+
+[node name="Unpause" type="AudioStreamPlayer" parent="." unique_id=604156639]
+stream = ExtResource("18_boyg6")
+
+[node name="GameOver" type="AudioStreamPlayer" parent="." unique_id=478986904]
+stream = ExtResource("19_e36ub")
+
+[connection signal="body_entered" from="Paddle" to="." method="_on_paddle_body_entered"]
+[connection signal="body_entered" from="Celling" to="." method="_on_celling_body_entered"]
+[connection signal="body_entered" from="Wall" to="." method="_on_wall_body_entered"]
+[connection signal="body_entered" from="Wall2" to="." method="_on_wall_2_body_entered"]

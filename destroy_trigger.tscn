@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://02jh1anhar8f"]
+
+[ext_resource type="Script" uid="uid://jtq3t2204gs2" path="res://Scripts/destroy_trigger.gd" id="1_muar1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3xd07"]
+size = Vector2(1354, 235)
+
+[node name="DestroyTrigger" type="Area2D" unique_id=1272365798]
+script = ExtResource("1_muar1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1263822627]
+position = Vector2(0, 118)
+shape = SubResource("RectangleShape2D_3xd07")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

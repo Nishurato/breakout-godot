@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://di6dbqge8uba3"]
+
+[ext_resource type="PackedScene" uid="uid://bwob1fxhw7ikm" path="res://wall.tscn" id="1_63fvg"]
+
+[node name="Game Space" type="Node" unique_id=1418833958]
+
+[node name="Celling" parent="." unique_id=270761852 instance=ExtResource("1_63fvg")]
+position = Vector2(355, 0)
+
+[node name="Wall" parent="." unique_id=2013886066 instance=ExtResource("1_63fvg")]
+position = Vector2(0, 176)
+rotation = -1.5707964
+
+[node name="Wall2" parent="." unique_id=449973282 instance=ExtResource("1_63fvg")]
+position = Vector2(1280, 326)
+rotation = 1.5707964

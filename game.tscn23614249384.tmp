@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://bx3b1mcmbcix1"]
+
+[ext_resource type="Script" uid="uid://vr07dd0o88st" path="res://Scripts/game.gd" id="1_7jktm"]
+[ext_resource type="PackedScene" uid="uid://bwob1fxhw7ikm" path="res://wall.tscn" id="1_80nbo"]
+[ext_resource type="PackedScene" uid="uid://cv6r2wbfv4e8f" path="res://paddle.tscn" id="3_feb5d"]
+[ext_resource type="PackedScene" uid="uid://bxevymji3t5c0" path="res://ball.tscn" id="4_fc0e3"]
+[ext_resource type="PackedScene" uid="uid://cnnwgqy63vjlc" path="res://bricks.tscn" id="5_eow3j"]
+[ext_resource type="PackedScene" uid="uid://02jh1anhar8f" path="res://destroy_trigger.tscn" id="6_ryrav"]
+[ext_resource type="PackedScene" uid="uid://p5weucsa10kc" path="res://hud.tscn" id="7_eow3j"]
+[ext_resource type="AudioStream" uid="uid://bj16bjgw1r0s7" path="res://SFX/appearance.wav" id="8_j5wjh"]
+[ext_resource type="AudioStream" uid="uid://c1mfafplhoswu" path="res://SFX/bounce.wav" id="8_vef74"]
+
+[node name="Game" type="Node2D" unique_id=89512707 groups=["Scores"]]
+script = ExtResource("1_7jktm")
+ball_scene = ExtResource("4_fc0e3")
+bricks_scene = ExtResource("5_eow3j")
+
+[node name="Paddle" parent="." unique_id=235795588 instance=ExtResource("3_feb5d")]
+position = Vector2(640, 660)
+speed = 700
+
+[node name="Ball" parent="." unique_id=996984360 instance=ExtResource("4_fc0e3")]
+position = Vector2(640, 375)
+
+[node name="Celling" parent="." unique_id=270761852 instance=ExtResource("1_80nbo")]
+position = Vector2(355, 0)
+
+[node name="Bricks" parent="." unique_id=1688514327 instance=ExtResource("5_eow3j")]
+
+[node name="Wall" parent="." unique_id=1007185271 instance=ExtResource("1_80nbo")]
+position = Vector2(0, 176)
+rotation = -1.5707964
+
+[node name="Wall2" parent="." unique_id=158655822 instance=ExtResource("1_80nbo")]
+position = Vector2(1280, 326)
+rotation = 1.5707964
+
+[node name="DestroyTrigger" parent="." unique_id=1272365798 instance=ExtResource("6_ryrav")]
+position = Vector2(658, 800)
+
+[node name="HUD" parent="." unique_id=409868500 instance=ExtResource("7_eow3j")]
+
+[node name="Bounce" type="AudioStreamPlayer" parent="." unique_id=1008699816]
+stream = ExtResource("8_vef74")
+
+[node name="Appearance" type="AudioStreamPlayer" parent="." unique_id=2119347618]
+stream = ExtResource("8_j5wjh")
+autoplay = true
+
+[node name="Background" type="CanvasLayer" parent="." unique_id=1357965558]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="Background" unique_id=1630425921]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(639, 372)
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[connection signal="body_entered" from="Paddle" to="." method="_on_paddle_body_entered"]
+[connection signal="body_entered" from="Celling" to="." method="_on_celling_body_entered"]
+[connection signal="body_entered" from="Wall" to="." method="_on_wall_body_entered"]
+[connection signal="body_entered" from="Wall2" to="." method="_on_wall_2_body_entered"]

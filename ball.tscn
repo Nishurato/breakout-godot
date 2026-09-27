@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bxevymji3t5c0"]
+
+[ext_resource type="Script" uid="uid://dhb6de1bb1sd" path="res://Scripts/ball.gd" id="1_d60mj"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_jq8tk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3xd07"]
+size = Vector2(25, 25)
+
+[node name="Ball" type="RigidBody2D" unique_id=996984360]
+gravity_scale = 0.0
+can_sleep = false
+lock_rotation = true
+continuous_cd = 2
+script = ExtResource("1_d60mj")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=643366593]
+scale = Vector2(25, 25)
+texture = SubResource("CanvasTexture_jq8tk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1207917964]
+shape = SubResource("RectangleShape2D_3xd07")
+
+[connection signal="destroy" from="." to="." method="_on_destroy"]
